@@ -28,10 +28,10 @@ export const ConfigModal: React.FC<ConfigModalProps> = ({ close, deadline, setDe
         <div className="flex gap-32">
           <span>Slippage</span>
           <Select size="sm" value={slippageAmount} onChange={(event) => setSlippageAmount(Number(event.target.value))}>
-            <option value={0.05}>0.05%</option>
-            <option value={0.1}>0.1%</option>
-            <option value={0.5}>0.5%</option>
             <option value={1}>1%</option>
+            <option value={2}>2%</option>
+            <option value={3}>3%</option>
+            <option value={4}>4%</option>
             <option value={5}>5%</option>
             <option value={10}>10%</option>
           </Select>
